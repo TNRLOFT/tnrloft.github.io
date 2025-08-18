@@ -46454,3 +46454,23 @@ body, html {
     padding: 10px;
   }
 }
+
+/* Specific fix for "Our Space Offers" section */
+
+.u-section-5 .u-text {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  padding: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile-specific tweaks */
+@media (max-width: 768px) {
+  .u-section-5 .u-text {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
