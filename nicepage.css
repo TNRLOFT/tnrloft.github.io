@@ -46455,22 +46455,34 @@ body, html {
   }
 }
 
-/* Specific fix for "Our Space Offers" section */
+/* Fix for text overlap in 'Our Space Offers' (Section 5) */
 
-.u-section-5 .u-text {
-  word-break: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.5;
-  font-size: 1.2rem;
-  padding: 10px;
-  max-width: 100%;
+.u-section-5 .u-layout-col {
+  width: 100% !important;
+  padding: 15px !important;
   box-sizing: border-box;
 }
 
-/* Mobile-specific tweaks */
+.u-section-5 .u-text {
+  word-break: break-word;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+/* On small screens */
 @media (max-width: 768px) {
+  .u-section-5 .u-layout {
+    display: block !important;
+  }
+
+  .u-section-5 .u-layout-col {
+    display: block;
+    width: 100% !important;
+  }
+
   .u-section-5 .u-text {
     font-size: 1rem;
-    padding: 12px;
+    padding: 10px 15px;
   }
 }
