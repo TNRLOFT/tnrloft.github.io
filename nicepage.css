@@ -46420,3 +46420,37 @@ a.u-link.u-text-hover-color-var:hover {
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
+/* === Responsive Fixes for Text & Layout === */
+m
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.u-text, .u-title, .u-body-text {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+/* Fix layout containers so content doesn't collapse */
+.u-container-layout, .u-section, .u-layout, .u-sheet {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for tablets and phones */
+@media (max-width: 768px) {
+  .u-text, .u-title, .u-body-text {
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+  .u-container-layout, .u-section, .u-layout, .u-sheet {
+    padding: 10px;
+  }
+}
